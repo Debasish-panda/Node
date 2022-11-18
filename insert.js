@@ -5,7 +5,8 @@ const insert = async () => {
     const result = await db.insert(
         {name:'note5', brand:'vivo',price:2344, catagory:'mobile'}
     );
-    console.log(result);
+    // console.log(result);
+
     if(result.acknowledged){
         console.log('data saved successfully');
     }
